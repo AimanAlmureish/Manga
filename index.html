@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- start manga header -->
+    <header>
+        <ul id="full-page">
+          <li><a href="/">Home</a></li>
+          <li><a href="/genres">Genres</a></li>
+          <li><a href="/benefits">About</a></li>
+          <li> <img src="images/logo.png" alt=""> </li>
+          <li><a href="/features">Features</a></li>
+          <li><a href="/about">Pricing</a></li>
+          <li><a href="/blog">Contact Us</a></li>
+        </ul>
+
+        <nav class="navigation">
+    <button class="icon-reorder" aria-expanded="false" aria-controls="menu"></button>
+    <ul id="menu"  hidden>
+      <li><a href="/">Home</a></li>
+      <li><a href="/benefits">About</a></li>
+      <li><a href="/genres">Genres</a></li>
+      <li><a href="/features">Features</a></li>
+      <li><a href="/about">Pricing</a></li>
+      <li><a href="/blog">Contact Us</a></li>
+    </ul>
+      </nav>
+      <div class="header-text">
+        <h1>ALL ABOUT MANGA</h1>
+        <h2>A WAY OF LIFE</h2>
+      </div>
+
+      <div class="video-background">
+        <video src="/videos/tokyo.mp4" autoplay loop muted poster="posterimage.jpg">
+
+        </video>
+      </div>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <!-- start manga body -->
+    <main>
+      <section id="genre">
+        <div class="fluid">
+          <div class="heading">
+            <h1>HEADING HERE</h1>
+          </div>
+
+          <div class="whole-genres">
+            <div class="genre-sections">
+              <div class="genre-img">
+                <img class="imggy" src="images/manga_transparent3.png" alt="">
+              </div>
+              <div class="genre-text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+
+            <div class="genre-sections">
+              <div class="genre-img">
+                <img class="imggy" src="images/manga_transparent.png" alt="">
+              </div>
+              <div class="genre-text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+
+            <div class="genre-sections bottom-padding">
+              <div class="genre-img">
+                <img class="imggy" src="images/manga_transparent2.png" alt="">
+              </div>
+              <div class="genre-text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="clearfix"></div>
+
+      <section id="about" class=" bottom-padding top-padding">
+        <div class="fluid">
+          <div class="about-img">
+            <img src="images/onepunch_gif.gif" alt="">
+          </div>
+          <div class="about-text">
+            <h2>Text here</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+
+        </div>
+      </section>
+
+      <div class="clearfix"></div>
+
+
+    </main>
+
+    <!-- start footer -->
+    <footer>
+
+    </footer>
+
+
+    <script type="text/javascript">
+       const toggleMenu = document.querySelector(".navigation button");
+       const menu = document.querySelector(".navigation ul");
+       toggleMenu.addEventListener("click", function () {
+       const open = JSON.parse(toggleMenu.getAttribute("aria-expanded"));
+       toggleMenu.setAttribute("aria-expanded", !open);
+       menu.hidden = !menu.hidden;
+       });
+    </script>
+
+  </body>
+</html>
