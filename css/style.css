@@ -338,7 +338,7 @@ header nav{
 .genre-text h2{
   font-size: 2em;
   font-weight: 100;
-  padding-top: 3em;
+  padding-top: 4em;
   letter-spacing: 3px;
 
 
@@ -420,7 +420,10 @@ header nav{
 
 .features-text{
   margin: 10em;
-
+  background-color: white;
+  padding: 3em;
+  border-radius: 12px;
+  box-shadow: 0 0px 20px 0 #808080bf;
 }
 
 .features-text h1{
@@ -444,7 +447,7 @@ header nav{
 
 
 
-
+/* MQS */
 
 @media (max-width:1091px) {
   header{
