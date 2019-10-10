@@ -210,7 +210,7 @@ header nav{
 
 }
 
-.video-background:after{
+/* .video-background:after{
   width: 100%;
   height: 1000px;
   content: "";
@@ -220,7 +220,7 @@ header nav{
   z-index: -1;
   visibility: visible;
 
-}
+} */
 
 .video-background video{
   width: 100%;
@@ -350,7 +350,7 @@ header nav{
   position: absolute;
   width: 100%;
   top: 2%;
-  right: 1%;
+  right: 2%;
   margin: -7px;
   z-index: 0;
   padding: 1px;
@@ -538,7 +538,84 @@ header nav{
 }
 
 
+/* start pricing */
 
+.pricing{
+
+}
+
+.whole-pricing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.single-pricing{
+  width: 26.333%;
+  float: left;
+  border-style: solid;
+  margin-bottom: 10px;
+  background-color: #8ee4af;
+  box-sizing: border-box;
+  margin: 23px;
+  padding-bottom: 5em;
+  border-width: 18px;
+  border-radius: 5px;
+
+
+}
+
+.single-pricing:nth-child(2){
+  flex: .8;
+  border-style: solid;
+  margin-bottom: 10px;
+  background-color: #05386b;
+  border-width: 18px;
+  border-radius: 5px;
+  color: #edf5e1;
+  border-color: black;
+  padding-bottom: 9em;
+
+
+
+}
+
+.type{
+  text-align: center;
+
+}
+
+.type h1{
+  font-size: 5em;
+  font-weight: 100;
+  padding-top: 1em;
+
+}
+
+.cost{
+  text-align: center;
+
+
+}
+
+.cost h1{
+  font-size: 8em;
+
+}
+
+.plan{
+  text-align: center;
+
+
+}
+
+.plan h3{
+  font-size: 4em;
+  font-weight: 100;
+  letter-spacing: 3px;
+
+}
 
 
 /* MQS */
@@ -560,7 +637,7 @@ header nav{
 }
 
 @media (max-width:1140px) {
-  .video-background:after{
+  /* .video-background:after{
     width: 100%;
     height: 30vh;
     content: "";
@@ -570,13 +647,40 @@ header nav{
     z-index: 1;
     visibility: hidden;
 
-  }
+  } */
 
 }
 
 
 
 @media (max-width:992px) {
+  .single-pricing:nth-child(2){
+    flex: 1;
+    border-style: solid;
+    margin-bottom: 10px;
+    background-color: #05386b;
+    border-width: 18px;
+    border-radius: 5px;
+    color: #edf5e1;
+    border-color: black;
+    padding-bottom: 5em;
+
+
+
+  }
+
+  .single-pricing{
+    width: 100%;
+    float: left;
+
+  }
+
+  .whole-companies {
+    display: inline-block;
+    margin: 2em;
+    position: relative;
+    right: 4%;
+}
 
   .single-company{
     width: 100%;
@@ -635,7 +739,7 @@ header nav{
   }
 
 
-  .video-background:after{
+  /* .video-background:after{
     width: 100%;
     content: "";
     background-color: rgba(7, 55, 101, 0.32);
@@ -644,7 +748,7 @@ header nav{
     z-index: -1;
     visibility: hidden;
 
-  }
+  } */
 
 
 
@@ -673,10 +777,12 @@ header nav{
   .genre-img:hover{
     border-style: solid;
     border-width: 8px;
+    height: 45vh;
     border-radius: 6px;
     position: relative;
     z-index: 1;
-    height: 66vh;
+    background-color: #3f51b52e;
+
 
   }
 
@@ -688,7 +794,7 @@ header nav{
     position: absolute;
     width: 100%;
     top: 2%;
-    right: 1%;
+    right: 2%;
     margin: -7px;
     z-index: 0;
     padding: 1px;
@@ -766,7 +872,7 @@ header nav{
       position: absolute;
       width: 100%;
       top: 2%;
-      right: 1%;
+      right: 2%;
       margin: -7px;
       z-index: 0;
       padding: 1px;
