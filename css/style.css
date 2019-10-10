@@ -70,9 +70,11 @@ main{
 
 header{
       width: 100%;
-      height: 100vh;
-      background-color: #389583;
+      /* height: 100vh;
+      background-color: #389583; */
+      background-color: black;
       position: relative;
+
       z-index: -1;
       display: table;
       margin: 0;
@@ -145,23 +147,27 @@ header nav{
 
 #menu{
   list-style: none;
-  margin: 0rem 1rem;
+  margin: 0rem 1.7rem;
+  margin-left:3rem;
       padding: 0rem;
       height: 0vh;
+      z-index: 1000;
+
+
 }
 
 
 #menu li{
-  width: 93%;
+  width: 90%;
   position: relative;
-  z-index: -1;
-  padding: 1rem;
+  /* z-index: -1; */
+  padding: 0.6rem;
   background-color: #0a3969;
   border-bottom-color: #389583;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  top: 24px;
-
+  top: 30px;
+  float: left;
 
 }
 
@@ -174,13 +180,14 @@ header nav{
 }
 .navigation button{
   position: absolute;
-  top: 0px;
-  right: 0;
+  top: -2px;
+  right:0;
   z-index: 1;
   background-color: transparent;
   border: hidden;
   font-size: 2em;
   margin: 1em;
+  margin-right: 1.5em;
   color: #5cdb95;
 }
 
@@ -192,18 +199,20 @@ header nav{
 
 .video-background:before{
   width: 100%;
-  height: 25vh;
+  /* height: 25vh; */
+  height: 135px;
   content: "";
   background-color: rgba(5, 57, 107, .9);;
   position: absolute;
   top: 0;
   z-index: 1;
+  visibility: visible;
 
 }
 
 .video-background:after{
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   content: "";
   background-color: rgba(7, 55, 101, 0.32);
   position: absolute;
@@ -215,9 +224,10 @@ header nav{
 
 .video-background video{
   width: 100%;
-  height: 130vh;
+  /* height: 130vh; */ I changed here
   position: absolute;
-  top: -136px;
+  /* top: -136px; */
+  top:0; /*I changed here*/
   z-index: -1;
 
 }
@@ -245,7 +255,7 @@ header nav{
 }
 
 .header-text h2{
-  color: white;
+      color: white;
       background-color: #5cdb95;
       text-align: center;
       position: absolute;
@@ -261,6 +271,23 @@ header nav{
 
 
 }
+.inner-desc{
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+  width: 33%;
+  right: 0%;
+  transition: all .4s;
+  display: block;
+
+}
+
+[alt="Play"] , [atl="Apple"]{
+  display: block;
+}
+
+
+
 
 /* start genre section */
 
@@ -271,6 +298,7 @@ header nav{
     max-width: none;
     height: 119vh;
     background-color: #8de4af;
+
 
 
 }
@@ -293,11 +321,14 @@ header nav{
   border-style: solid;
   border-width: 8px;
   height: 45vh;
+
   border-radius: 6px;
   background-color: transparent;
 
 
 }
+
+
 
 .genre-img:hover{
   border-style: solid;
@@ -336,6 +367,14 @@ header nav{
   z-index: 1;
 }
 
+
+.genre-img img:nth-child(1){
+  width: 100%;
+  position: relative;
+  top: -3%;
+  z-index: 1;
+}
+
 .genre-text{
 
 }
@@ -343,7 +382,7 @@ header nav{
 .genre-text h2{
   font-size: 2em;
   font-weight: 100;
-  padding-top: 4em;
+  padding-top: 2em;
   letter-spacing: 3px;
 
 
@@ -449,6 +488,56 @@ header nav{
 }
 
 
+/* companies start */
+
+#companies{
+  background-color: #8ee4af;
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 58vh;
+
+}
+
+.whole-companies{
+  display: inline-block;
+  margin: 6em;
+  position: relative;
+  right: -6%;
+
+}
+
+.single-company{
+  width: 21.333%;
+  float: left;
+  margin: 4%;
+  border-style: solid;
+  border-width: 18px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* .single-company:nth-child(2){
+  flex: 1;
+  border-style: solid;
+  padding: 13px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+  margin: 62px;
+  border-width: 17px;
+  border-radius: 6px;
+
+} */
+
+.single-company img{
+  width: 100%;
+
+}
+
+
 
 
 
@@ -457,13 +546,15 @@ header nav{
 @media (max-width:1091px) {
   header{
     width: 100%;
-        background-color: #389583;
+        /* background-color: #389583; */
+        background-color: black;
+
         position: relative;
         z-index: -1;
         display: table;
         margin: 0;
         max-width: none;
-        height: 61vh;
+        /* height: 1vh; */
   }
 
 }
@@ -473,7 +564,7 @@ header nav{
     width: 100%;
     height: 30vh;
     content: "";
-    background-color: rgba(5, 57, 107, 0.74);;
+    background-color: rgba(5, 57, 107, 0.74);
     position: absolute;
     bottom: -2px;
     z-index: 1;
@@ -486,6 +577,17 @@ header nav{
 
 
 @media (max-width:992px) {
+
+  .single-company{
+    width: 100%;
+    float: left;
+    border-style: solid;
+    border-width: 18px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+
   #full-page{
     position: relative;
     width: 100%;
@@ -493,6 +595,7 @@ header nav{
     align-items: baseline;
     place-content: center;
     list-style: none;
+
 
   }
 
@@ -503,12 +606,43 @@ header nav{
     transition: all .5s ease;
   }
 
+  .whole-genres{
+
+    margin: 5%;
+  }
+
   .genre-sections{
     width: 100%;
     display: inline-block;
     float: left;
     margin: 9px;
     padding-bottom: 3em;
+    height: 800px;
+    margin-bottom: 20%;
+
+  }
+
+  .video-background:before{
+    width: 100%;
+    height: 25vh;
+    content: "";
+    background-color: rgba(5, 57, 107, .9);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    visibility: hidden;
+
+  }
+
+
+  .video-background:after{
+    width: 100%;
+    content: "";
+    background-color: rgba(7, 55, 101, 0.32);
+    position: absolute;
+    bottom: -2px;
+    z-index: -1;
+    visibility: hidden;
 
   }
 
@@ -530,7 +664,7 @@ header nav{
   .genre-img{
     border-style: solid;
     border-width: 8px;
-    height: 150vh;
+    height: 66vh;
     border-radius: 6px;
 
 
@@ -539,18 +673,17 @@ header nav{
   .genre-img:hover{
     border-style: solid;
     border-width: 8px;
-    height: 45vh;
     border-radius: 6px;
     position: relative;
     z-index: 1;
-    height: 150vh;
+    height: 66vh;
 
   }
 
   .genre-img:after{
     height: 150vh;
     border-radius: 6px;
-    background-color: #3f51b52e;
+    /* background-color: #3f51b52e; */ /*ichanged here*/
     content: "";
     position: absolute;
     width: 100%;
@@ -559,9 +692,6 @@ header nav{
     margin: -7px;
     z-index: 0;
     padding: 1px;
-
-
-
 
   }
 
@@ -584,28 +714,54 @@ header nav{
 
   }
 
-    .genre-img{
-      border-style: solid;
-      border-width: 8px;
-      height: 45vh;
-      border-radius: 6px;
+  .genre-img{
+    border-style: solid;
+    border-width: 8px;
+    height: 30vh;
+    border-radius: 6px;
 
 
-    }
+  }
+
+  .genre-img:hover{
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    height: 30vh;
+
+  }
+
 
     .genre-sections{
       width: 100%;
       display: inline-block;
       float: left;
       margin: 9px;
-      padding-bottom: 3em;
+      padding-bottom: 0em;
+      height: max-content;
+
 
     }
+
+    .genre-sections:nth-child(3){
+      width: 100%;
+      display: inline-block;
+      float: left;
+      margin: 9px;
+      padding-bottom: 0em;
+      height: max-content;
+      padding-bottom: 5em;
+
+
+    }
+
 
     .genre-img:after{
       height: 45vh;
       border-radius: 6px;
-      background-color: #3f51b52e;
+      /* background-color: #3f51b52e; */ /*i changed here*/
       content: "";
       position: absolute;
       width: 100%;
@@ -616,15 +772,6 @@ header nav{
       padding: 1px;
     }
 
-    .genre-img:hover{
-      border-style: solid;
-      border-width: 8px;
-      height: 45vh;
-      border-radius: 6px;
-      position: relative;
-      z-index: 1;
-      height: 45vh;
 
-    }
 
 }
