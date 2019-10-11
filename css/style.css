@@ -131,9 +131,11 @@ header nav{
 
 #full-page li a{
   text-decoration: none;
-    font-size: 1em;
-    color: white;
-    font-weight: 100;
+  font-size: 1em;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+
 
 }
 
@@ -316,8 +318,7 @@ header nav{
 .genre-img{
   border-style: solid;
   border-width: 8px;
-  height: 45vh;
-
+  height: 53vh;
   border-radius: 6px;
   background-color: transparent;
 
@@ -329,7 +330,7 @@ header nav{
 .genre-img:hover{
   border-style: solid;
   border-width: 8px;
-  height: 45vh;
+  height: 53vh;
   border-radius: 6px;
   position: relative;
   z-index: 1;
@@ -755,7 +756,7 @@ border-color: white;
 /* start footer */
 
 footer{
-  background-color: white;
+  background-color: whitesmoke;
 
 }
 
@@ -800,11 +801,8 @@ footer{
 
 .footer-sections h1{
   letter-spacing: 3px;
-  padding-bottom: 1em;
+  padding-bottom: .3em;
   font-size: 3em;
-
-
-
 }
 
 .footer-sections ul{
@@ -813,7 +811,13 @@ footer{
 }
 
 .footer-sections ul li{
-  font-size: 1.4em;
+  font-size: larger;
+  padding-bottom: .3em;
+
+}
+
+.footer-sections ul a{
+  color: black;
 }
 
 .inner-desc img{
@@ -821,7 +825,7 @@ footer{
   display: inline-block;
 }
 
-.inner-disc p{
+.inner-desc p{
   font-size: larger;
   padding-bottom: 1em;
 }
