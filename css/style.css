@@ -272,13 +272,9 @@ header nav{
 
 }
 .inner-desc{
-  position: absolute;
   z-index: 999;
-  top: 0px;
-  width: 33%;
-  right: 0%;
   transition: all .4s;
-  display: block;
+  display: inline-block;
 
 }
 
@@ -382,7 +378,7 @@ header nav{
 .genre-text h2{
   font-size: 2em;
   font-weight: 100;
-  padding-top: 2em;
+  padding-top: 3em;
   letter-spacing: 3px;
 
 
@@ -432,7 +428,7 @@ header nav{
   color: #f3eca0;
   font-weight: 100;
   padding-bottom: 1em;
-  font-size: 2em;
+  font-size: 4em;
   letter-spacing: 3px;
 
 }
@@ -442,6 +438,9 @@ header nav{
   font-weight: 100;
   letter-spacing: 1px;
   padding-bottom: 3em;
+  font-size: 2em;
+
+
 
 
 
@@ -481,10 +480,17 @@ header nav{
 
 .features-text p{
   text-align: center;
-  font-weight: 100;
-  letter-spacing: 1px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 2em;
+  padding-bottom: 1em;
 
 
+}
+
+.features-text a{
+text-decoration: none;
+color: black;
 }
 
 
@@ -501,12 +507,13 @@ header nav{
 }
 
 .whole-companies{
-  display: inline-block;
-  margin: 6em;
-  position: relative;
-  right: -6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
-}
+
+
 
 .single-company{
   width: 21.333%;
@@ -540,7 +547,10 @@ header nav{
 
 /* start pricing */
 
-.pricing{
+#pricing{
+  background-image: url(../images/mange_transparent_flowers.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 
 }
 
@@ -549,6 +559,8 @@ header nav{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 7em;
+
 }
 
 .single-pricing{
@@ -617,6 +629,209 @@ header nav{
 
 }
 
+/* start contact */
+
+#contact{
+  background-color: #05386b;
+  padding-bottom: 4em;
+
+
+}
+
+.whole-form{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+  right: 21px;
+
+  }
+
+
+
+
+
+.whole-form form{
+
+}
+
+
+
+[name="name"]{
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-style: solid;
+  border-width: 12px;
+  border-radius: 5px;
+
+}
+
+[name="email"]{
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-style: solid;
+  border-width: 12px;
+  border-radius: 5px;
+
+}
+
+[name="subject"]{
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-style: solid;
+  border-width: 12px;
+  border-radius: 5px;
+
+}
+
+[name="submit"]{
+  color: white;
+  background-color: black;
+  padding: 18px;
+  font-size: 1.5em;
+  border-style: hidden;
+  border-radius: 5px;
+  /* cursor:  context-menu; */
+  font-family: 'Bangers';
+  transition: all .3s ease;
+}
+
+[name="submit"]:hover{
+  color: black;
+  background-color: white;
+  padding: 18px;
+  font-size: 1.5em;
+  border-style: hidden;
+  border-radius: 5px;
+  /* cursor:  context-menu; */
+  font-family: 'Bangers';
+  transition: all .3s ease;
+}
+
+textarea{
+  width: 100%;
+margin-bottom: 1em;
+padding: 1em;
+border-style: solid;
+border-width: 12px;
+border-radius: 5px;
+color: white;
+background-color: black;
+border-color: white;
+
+
+}
+
+
+
+/* start gif section */
+
+#hair-gif .gif{
+
+  background-image: url(../images/manga_smile.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:  75vh;
+  background-attachment: fixed;
+
+}
+
+.text-gif{
+  width: 50%;
+  float: right;
+  background-color: #8ee4af;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  top: 0em;
+  padding-top: 0em;
+}
+
+
+/* start footer */
+
+footer{
+  background-color: white;
+
+}
+
+.whole-footer{
+  padding: 0px 118px;
+  display: inline-block;
+  padding-top: 5em;
+
+}
+
+.footer-sections{
+  width: 29.33%;
+  float: left;
+  margin: 2%;
+  box-sizing: border-box;
+
+
+
+}
+
+.footer-sections:nth-child(1){
+
+  padding-bottom: 3em;
+}
+
+.footer-sections:nth-child(2){
+  padding-bottom: 3em;
+}
+
+.footer-sections:nth-child(3){
+  border-color: black;
+  border-width: 18px;
+  border-style: solid;
+  box-sizing: border-box;
+
+}
+
+.footer-sections img{
+  width: 100%;
+
+}
+
+.footer-sections h1{
+  letter-spacing: 3px;
+  padding-bottom: 1em;
+  font-size: 3em;
+
+
+
+}
+
+.footer-sections ul{
+  list-style: none;
+
+}
+
+.footer-sections ul li{
+  font-size: 1.4em;
+}
+
+.inner-desc img{
+  width: 30%;
+  display: inline-block;
+}
+
+.inner-disc p{
+  font-size: larger;
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+
 
 /* MQS */
 
@@ -654,6 +869,20 @@ header nav{
 
 
 @media (max-width:992px) {
+  .footer-sections{
+    width: 100%;
+    float: left;
+
+
+
+  }
+
+  .whole-form{
+    margin: auto;
+    width: 64%;
+    padding: 10px;
+    }
+
   .single-pricing:nth-child(2){
     flex: 1;
     border-style: solid;
@@ -765,19 +994,17 @@ header nav{
     top: 3em;
   }
 
-  .genre-img{
-    border-style: solid;
-    border-width: 8px;
-    height: 66vh;
-    border-radius: 6px;
-
-
+  .genre-img {
+      border-style: solid;
+      border-width: 8px;
+      height: 117vh;
+      border-radius: 6px;
   }
 
   .genre-img:hover{
     border-style: solid;
     border-width: 8px;
-    height: 45vh;
+    height: 117vh;
     border-radius: 6px;
     position: relative;
     z-index: 1;
@@ -806,6 +1033,26 @@ header nav{
 
 
 @media (max-width:767px) {
+  .genre-img {
+    border-style: solid;
+    border-width: 8px;
+    height: 84vh;
+    border-radius: 6px;
+
+  }
+
+  .genre-img:hover{
+    border-style: solid;
+    border-width: 8px;
+    height: 84vh;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    background-color: #3f51b52e;
+
+
+  }
+
   .features-text{
     margin: 5em;
 
@@ -820,13 +1067,11 @@ header nav{
 
   }
 
-  .genre-img{
-    border-style: solid;
-    border-width: 8px;
-    height: 30vh;
-    border-radius: 6px;
-
-
+  .genre-img {
+      border-style: solid;
+      border-width: 8px;
+      height: 39vh;
+      border-radius: 6px;
   }
 
   .genre-img:hover{
@@ -835,7 +1080,7 @@ header nav{
     border-radius: 6px;
     position: relative;
     z-index: 1;
-    height: 30vh;
+    height: 39vh;
 
   }
 
